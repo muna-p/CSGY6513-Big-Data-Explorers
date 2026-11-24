@@ -1,0 +1,47 @@
+[
+    {
+        "column_name": "BOROUGH",
+        "description": "Borough where program resides",
+        "extra_info": null
+    },
+    {
+        "column_name": "GRADE",
+        "description": null,
+        "extra_info": null
+    },
+    {
+        "column_name": "PROGRAM TYPE",
+        "description": "The types of classes students are enrolled in.",
+        "extra_info": "General Education (Gen Ed), \nIntegrated Co-Teaching (ICT), \nGifted and Talented (G&T), \nSelf-Contained (SC)\nAccelerated (Acc)"
+    },
+    {
+        "column_name": "CORE SUBJECT (MS CORE and 9-12 ONLY)",
+        "description": "Subject of Instruction",
+        "extra_info": null
+    },
+    {
+        "column_name": "CORE COURSE (MS CORE and 9-12 ONLY)",
+        "description": "Course Name",
+        "extra_info": null
+    },
+    {
+        "column_name": "SERVICE CATEGORY(K-9* ONLY)",
+        "description": "Denotes students population to teacher ratio per program type",
+        "extra_info": null
+    },
+    {
+        "column_name": "NUMBER OF STUDENTS / SEATS FILLED",
+        "description": null,
+        "extra_info": null
+    },
+    {
+        "column_name": "NUMBER OF SECTIONS",
+        "description": "Number of students per borough/grade/program/subject",
+        "extra_info": null
+    },
+    {
+        "column_name": "AVERAGE CLASS SIZE",
+        "description": "Average number of students per class",
+        "extra_info": null
+    }
+]

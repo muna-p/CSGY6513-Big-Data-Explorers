@@ -1,0 +1,21 @@
+# Local runs and review snapshots
+/runs/
+/.review-*/
+/stratyper_datasets/
+/stratyper-main/config/*.local.yaml
+
+# Local Python environments, caches, and secrets
+/.stratyper-venv/
+/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+
+# Local course materials
+/Big_Data_Project9_Proposal.pdf
+/Final Projects Ideas-Fall-2026.pdf
+/Project_Guidelines_and_Timeline_2026.pdf

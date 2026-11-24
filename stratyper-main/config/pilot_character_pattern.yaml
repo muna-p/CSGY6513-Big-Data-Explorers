@@ -1,0 +1,36 @@
+# Run from stratyper-main with an existing Ollama qwen2.5:3b installation.
+dataset_path: ../pilot/nyce_smoke/data
+metadata_path: ../pilot/nyce_smoke/metadata
+results_path: ../runs/nyce_smoke/character_pattern_b10_s42
+embedding_path: ../runs/nyce_smoke/character_pattern_b10_s42
+other_annotations_paths: null
+
+name_clusters: [0.75]
+value_clusters: [0.75]
+min_cluster_size: 2
+providers:
+  ctd: ollama
+  ccta: ollama
+  judge: ollama
+models:
+  ctd: "qwen2.5:3b"
+  ccta: "qwen2.5:3b"
+  judge: "qwen2.5:3b"
+  embedding_model: all-MiniLM-L6-v2
+temperatures:
+  ctd: 0.3
+  ccta: 0.0
+  judge: 0.0
+
+sampling_type: length
+# Missing/null leaves the original CTD prompt and length sampling active.
+text_ctd_sampling_type: character_pattern
+text_ctd_sample_budget: 10
+ctd_sampling_seed: 42
+
+context: most_frequent_5
+number_of_rows_ccta: 3
+number_of_samples_ctd: 10
+number_of_samples_ccta: 10
+number_of_samples_judge: 10
+ccta_refinement: false
